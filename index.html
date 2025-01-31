@@ -17,10 +17,30 @@
   font-family: "sora", sans-serif;
   
 }
+/* animation */
+@keyframes marquee {
+  0% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  100% {
+   opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+.animation-marquee {
+    animation: marquee 20s linear infinite;
+}
 </style>
 </head>
 <body class="sora">
     <header class="p-2  bg-linear-to-r from-[#EFEBE3] to-[#EFEBE3]  rounded-lg ">
+        <!-- animation -->
+         <section>
+            <div>
+                <h1 class="text-white bg-sky-600 font-semibold animation-marquee  text-center rounded-lg">Don't Give up.Your Success is Here</h1>
+            </div>
+         </section>
         <section class="container m-auto " >
             <div class="hidden md:block">
                 <nav class="flex justify-between items-center">
