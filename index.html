@@ -9,8 +9,8 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="container m-auto">
-        <section class=" mt-4" >
+    <header class="p-2  bg-linear-to-r from-[#EFEBE3] to-[#EFEBE3]  rounded-lg ">
+        <section class="container m-auto " >
             <div class="hidden md:block">
                 <nav class="flex justify-between items-center">
                     <div>
@@ -70,8 +70,42 @@
         </section>
             </section>
     </header>
-    <main>
-
+    <main class="container m-auto">
+        <!-- service section -->
+         <section>
+            <h2 class="text-3xl text-[#179800] font-bold mt-10 py-4">Services</h2>
+            <div>
+                <!-- card section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+                    <div class="bg-[#EFEBE3] p-4 rounded-lg w-full">
+                        <div class=" ">
+                            <img class="m-auto" src="service.png" alt="icon">
+                        </div>
+                        <div class="text-center py-2">
+                            <h3 class="text-xl font-bold">24/7 Services </h3>
+                            <p>Get the freshest produce delivered <br> to your doorstep</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#EFEBE3] p-4 rounded-lg">
+                        <div class="text-center">
+                            <img class="m-auto" src="delivery.png" alt="icon">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-xl font-bold">Fast Delivery</h3>
+                            <p>From rice to lentils, we  have <br> everything you need</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#EFEBE3] p-4 rounded-lg">
+                        <div class="text-center">
+                            <img class="m-auto" src="healthy.png" alt="icon">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-xl font-bold">Healthy products</h3>
+                            <p>Shop for personal care products <br> at unbeatable prices</p>
+                        </div>
+                    </div>
+            </div>
+         </section>
     </main>
     <footer>
 
