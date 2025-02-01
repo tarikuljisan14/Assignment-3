@@ -18,29 +18,40 @@
   
 }
 /* animation */
-@keyframes marquee {
-  0% {
-    opacity: 1;
-    transform: translateX(100%);
-  }
-  100% {
-   opacity: 1;
-    transform: translateX(-100%);
-  }
-}
-.animation-marquee {
-    animation: marquee 20s linear infinite;
-}
+
+     @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+     }
+    .fade-animation {
+        animation: fadeIn 4s ease-in-out infinite;
+    }
+
+   
 </style>
 </head>
 <body class="sora">
-    <header class="p-2  bg-linear-to-r from-[#EFEBE3] to-[#EFEBE3]  rounded-lg ">
-        <!-- animation -->
-         <section class="">
+     <!-- animation -->
+     <section class="">
+        <div>
+            <h1 class=" text-sky-600 bg-[#e2e1df] font-bold fade-animation  text-center ">Don't Give up. Your Success is Here!</h1>
+        </div>
+     </section>
+    <header class="p-2  bg-linear-to-r from-[#e2e1df] to-[#fffcf7]  rounded-lg ">
+       
+         <!-- navigate Menu -->
+          <section class="flex justify-between items-center border-b-2 border-[#1f8127] p-2"> 
             <div>
-                <h1 class="text-white bg-sky-600 font-semibold animation-marquee  text-center rounded-lg">Don't Give up.Your Success is Here</h1>
+                <img src="logo-header.png" alt="">
             </div>
-         </section>
+            <div>
+                <span class=" md:hidden  space-x-4 absolute right-0 " id="menu ">
+                    <span class="border w-[25px]  flex mb-1 text-[#1f8127]"></span>
+                    <span class="border w-[25px] flex mb-1 text-[#1f8127]"></span>
+                    <span class="border w-[25px] flex mb-1 text-[#1f8127] "></span>
+                </span>
+            </div>
+          </section>
         <section class="container m-auto " >
             <div class="hidden md:block">
                 <nav class="flex justify-between items-center">
@@ -145,7 +156,7 @@
         <!--Popular  product section -->
          <section class="bg-[#F5F5F5] p-4 rounded-lg">
             <div>
-                <h1 class="text-[#179800] text-3xl font-semibold mt-10 py-3 px-2 md:px-7">Popular Products</h1>
+                <h1 class="text-[#179800] text-3xl font-semibold mt-1 py-3 px-2 md:px-2 md:mb-5">Popular Products</h1>
             </div>
            <!-- card head -->
             <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
